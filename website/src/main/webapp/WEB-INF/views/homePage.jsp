@@ -36,70 +36,68 @@
 
 <!-- Custom styles for this template -->
 <link href="${css}/modern-business.css" rel="stylesheet">
+<style>
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(0, 0, 0, .9);
+	font-size: 15px;
+	padding-left: 12px;
+}
 
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: rgb(0, 0, 0);
+	background: #ccc;
+	border-radius: 9px;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link {
+	color: rgb(0, 0, 0);
+}
+
+p.sint {
+	font-size: 34px;
+	color: #098f90;
+	text-align: center;
+	position: relative;
+	font-weight: 400 !important;
+	text-shadow: 1px 1px 1px #030102;
+	margin-bottom: 30px;
+}
+
+p.sint:after {
+	content: '';
+	background: #098f90;
+	height: 1px;
+	width: 30%;
+	left: 35%;
+	position: absolute;
+	bottom: 0%;
+}
+
+p.sint span:before {
+	left: 34.5%;
+}
+
+p.sint span:after {
+	right: 34.5%;
+}
+
+p.sint span:before, p.sint span:after {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #098f90;
+	border-radius: 25px;
+	background-color: #098f90;
+	bottom: -8%;
+}
+</style>
 </head>
 
-<body>
+<body
+	style="background-image: url('${images}/b4.jpg');backgroung-repeat:repear;">
 
-	<!-- Navigation -->
-	<nav style="border-bottom: 2px solid #4e555c;"
-		class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Vedhacon</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button"
-				data-toggle="collapse" data-target="#navbarResponsive"
-				aria-controls="navbarResponsive" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="services.html">Services</a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
-					</li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#"
-						id="navbarDropdownPortfolio" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> Portfolio </a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="portfolio-1-col.html">1 Column
-								Portfolio</a> <a class="dropdown-item" href="portfolio-2-col.html">2
-								Column Portfolio</a> <a class="dropdown-item"
-								href="portfolio-3-col.html">3 Column Portfolio</a> <a
-								class="dropdown-item" href="portfolio-4-col.html">4 Column
-								Portfolio</a> <a class="dropdown-item" href="portfolio-item.html">Single
-								Portfolio Item</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Blog </a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-							<a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-							<a class="dropdown-item" href="blog-post.html">Blog Post</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Other Pages </a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="full-width.html">Full Width
-								Page</a> <a class="dropdown-item" href="sidebar.html">Sidebar
-								Page</a> <a class="dropdown-item" href="faq.html">FAQ</a> <a
-								class="dropdown-item" href="404.html">404</a> <a
-								class="dropdown-item" href="pricing.html">Pricing Table</a>
-						</div></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<%@include file="./shared/navbar.jsp"%>
 
 	<header style="border-top: 9px solid #151616;">
 		<div id="carouselExampleIndicators" class="carousel slide"
@@ -149,15 +147,16 @@
 	</header>
 
 	<!-- Page Content -->
-	<div class="container">
-
-		<h1 class="my-4">Welcome to Modern Business</h1>
-
+	<div class="container" style="padding-top: 25px;">
+		<p class="sint">
+			<span>Services</span>
+		</p>
 		<!-- Marketing Icons Section -->
-		<div class="row">
+		<div class="row" style="padding-bottom: 13px;">
 			<div class="col-lg-4 mb-4">
-				<div class="card h-100">
-					<h4 class="card-header">Card Title</h4>
+				<div class="card h-100"
+					style="box-shadow: 7px 7px 4px #343a40; border: 1px solid #b2abab;">
+					<h4 class="card-header">Training</h4>
 					<div class="card-body">
 						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -168,8 +167,9 @@
 				</div>
 			</div>
 			<div class="col-lg-4 mb-4">
-				<div class="card h-100">
-					<h4 class="card-header">Card Title</h4>
+				<div class="card h-100"
+					style="box-shadow: 7px 7px 4px #343a40; border: 1px solid #b2abab;">
+					<h4 class="card-header">Consulting</h4>
 					<div class="card-body">
 						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus
@@ -183,8 +183,9 @@
 				</div>
 			</div>
 			<div class="col-lg-4 mb-4">
-				<div class="card h-100">
-					<h4 class="card-header">Card Title</h4>
+				<div class="card h-100"
+					style="box-shadow: 7px 7px 4px #343a40; border: 1px solid #b2abab;">
+					<h4 class="card-header">ARM Tool</h4>
 					<div class="card-body">
 						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -195,152 +196,129 @@
 				</div>
 			</div>
 		</div>
-		<!-- /.row -->
 
-		<!-- Portfolio Section -->
-		<h2>Portfolio Heading</h2>
+		<div class="row" style="padding-bottom: 13px;">
+			<div class="col-lg-4 mb-4" style="margin-bottom: 0 !important;">
+				<div class="mb-12">
+					<div class="card h-100"
+						style="box-shadow: 7px 7px 4px #343a40; border: 1px solid #b2abab; margin-bottom: 31px;">
+						<h4 class="card-header">Blogs</h4>
+						<div class="card-body">
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Sapiente esse necessitatibus neque.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-primary">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="mb-12">
+					<div class="card h-100"
+						style="box-shadow: 7px 7px 4px #343a40; border: 1px solid #b2abab;">
+						<h4 class="card-header">Latest News in Privacy</h4>
+						<div class="card-body">
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Sapiente esse necessitatibus neque.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-primary">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 mb-8">
+				<div class="card h-100"
+					style="box-shadow: 7px 7px 4px #343a40; border: 1px solid #b2abab;">
+					<h4 class="card-header">ARM Tool - Request Free Total</h4>
+					<form>
+						<div class="card-body">
 
+							<div class="form-group row">
+								<label for="inputEmail3" class="col-sm-3 col-form-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputEmail3"
+										placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="inputEmail3"
+										placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Organization</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputPassword3"
+										placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Country</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputPassword3"
+										placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Expectation
+									from Tool</label>
+								<div class="col-sm-9">
+									<textarea type="text" class="form-control" id="inputPassword3"
+										placeholder="Password"></textarea>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-9">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox"
+											id="gridCheck1"> <label class="form-check-label"
+											for="gridCheck1"> Example checkbox </label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-10"></div>
+							</div>
+
+						</div>
+						<div class="card-footer" style="text-align: right;">
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<p class="sint">
+			<span>Our Customers</span>
+		</p>
 		<div class="row">
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project One</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Amet numquam aspernatur eum quasi sapiente
-							nesciunt? Voluptatibus sit, repellat sequi itaque deserunt,
-							dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-					</div>
-				</div>
+			<!-- <div class="col-lg-2 col-sm-4 mb-4">
+				<img class="img-fluid" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Two</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-							urna varius vitae.</p>
-					</div>
-				</div>
+			<div class="col-lg-2 col-sm-4 mb-4">
+				<img class="img-fluid" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Three</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Quos quisquam, error quod sed cumque, odio
-							distinctio velit nostrum temporibus necessitatibus et facere
-							atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-					</div>
-				</div>
+			<div class="col-lg-2 col-sm-4 mb-4">
+				<img class="img-fluid" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Four</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-							urna varius vitae.</p>
-					</div>
-				</div>
+			<div class="col-lg-2 col-sm-4 mb-4">
+				<img class="img-fluid" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Five</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-							urna varius vitae.</p>
-					</div>
-				</div>
+			<div class="col-lg-2 col-sm-4 mb-4">
+				<img class="img-fluid" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Six</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Itaque earum nostrum suscipit ducimus nihil
-							provident, perferendis rem illo, voluptate atque, sit eius in
-							voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-					</div>
-				</div>
-			</div>
+			<div class="col-lg-2 col-sm-4 mb-4">
+				<img class="img-fluid" src="http://placehold.it/500x300" alt="">
+			</div> -->
 		</div>
-		<!-- /.row -->
-
-		<!-- Features Section -->
-		<div class="row">
-			<div class="col-lg-6">
-				<h2>Modern Business Features</h2>
-				<p>The Modern Business template by Start Bootstrap includes:</p>
-				<ul>
-					<li><strong>Bootstrap v4</strong></li>
-					<li>jQuery</li>
-					<li>Font Awesome</li>
-					<li>Working contact form with validation</li>
-					<li>Unstyled page elements for easy customization</li>
-				</ul>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Corporis, omnis doloremque non cum id reprehenderit, quisquam totam
-					aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis
-					quia dolorum ducimus unde.</p>
-			</div>
-			<div class="col-lg-6">
-				<img class="img-fluid rounded" src="http://placehold.it/700x450"
-					alt="">
-			</div>
-		</div>
-		<!-- /.row -->
-
-		<hr>
-
-		<!-- Call to Action Section -->
-		<div class="row mb-4">
-			<div class="col-md-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum
-					neque nemo praesentium cum alias asperiores commodi.</p>
-			</div>
-			<div class="col-md-4">
-				<a class="btn btn-lg btn-secondary btn-block" href="#">Call to
-					Action</a>
-			</div>
-		</div>
-
 	</div>
 	<!-- /.container -->
 
-	<!-- Footer -->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your
-				Website 2017</p>
-		</div>
-		<!-- /.container -->
-	</footer>
+	<!-- Footer --><%@include file="./shared/footer.jsp"%>
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="${vendor}/jquery/jquery.min.js"></script>
