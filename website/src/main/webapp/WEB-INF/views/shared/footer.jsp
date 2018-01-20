@@ -4,45 +4,45 @@
 		<div class="row" style="font-size: 13px;">
 			<div class="col-lg-2">
 				<h6>
-					<a href="asdf">About Us</a>
+					<a href="aboutUs">About Us</a>
 				</h6>
 				<p class="footer-links">
-					<a href="sadf" style="color: #c9c9cb;">Team</a><br> <a
-						href="sadf" style="color: #c9c9cb;">Our Partners</a><br>
+					<a href="aboutUs?pg=team" style="color: #c9c9cb;">Team</a><br>
+					<a href="aboutUs?pg=partners" style="color: #c9c9cb;">Our
+						Partners</a><br>
 				</p>
 			</div>
 			<div class="col-lg-2">
 				<h6>
-					<a href="sadf">Privacy</a>
+					<a href="privacy">Privacy</a>
 				</h6>
 				<p class="footer-links">
-					<a href="sadf" style="color: #c9c9cb;">What is Privacy ?</a><br>
-					<a href="sadf" style="color: #c9c9cb;">Why Privacy</a><br> <a
-						href="sadf" style="color: #c9c9cb;">Privacy Laws</a><br> <a
-						href="sadf" style="color: #c9c9cb;">GDPR</a><br> <a
-						href="sadf" style="color: #c9c9cb;">India Data Protection</a>
+					<a href="privacy" style="color: #c9c9cb;">What & Why Privacy?</a><br>
+					<a href="privacy?pg=privacyLaws" style="color: #c9c9cb;">Privacy
+						Laws</a><br> <a href="privacy?pg=gdpr" style="color: #c9c9cb;">GDPR</a><br>
+					<a href="privacy?pg=dpfi" style="color: #c9c9cb;">Data
+						Protection Framework for India</a>
 				</p>
 			</div>
 			<div class="col-lg-2">
 				<h6>
-					<a href="sadf">Training & Consulting</a>
+					<a href="tciModel">TCI Model</a>
 				</h6>
 				<p class="footer-links">
-					<a href="asdf" style="color: #c9c9cb;">How Vedhacon help ?</a><br>
-					<a href="sadf" style="color: #c9c9cb;">Training</a><br> <a
-						href="asdf" style="color: #c9c9cb;">Consulting</a><br> <a
-						href="sadf" style="color: #c9c9cb;">Tool</a>
+					<a href="tciModel?pg=train" style="color: #c9c9cb;">Train </a><br>
+					<a href="tciModel?pg=consult" style="color: #c9c9cb;">Consult </a><br>
+					<a href="tciModel?pg=implement" style="color: #c9c9cb;">Implement</a>
 				</p>
 			</div>
 			<div class="col-lg-2">
 				<h6>
-					<a href="asdf">Resources</a>
+					<a href="resources1">Resources</a>
 				</h6>
 				<p class="footer-links">
-					<a href="sadf" style="color: #c9c9cb;">Articles</a><br> <a
-						href="asdf" style="color: #c9c9cb;">Papers</a><br> <a
-						href="asdf" style="color: #c9c9cb;">Charts</a><br> <a
-						href="sadf" style="color: #c9c9cb;">Websites</a>
+					<a href="sadf" style="color: #c9c9cb;">News & Updates</a><br>
+					<a href="asdf" style="color: #c9c9cb;">White Papers</a><br> <a
+						href="asdf" style="color: #c9c9cb;">Infographics</a><br> <a
+						href="sadf" style="color: #c9c9cb;">External sites</a>
 				</p>
 			</div>
 			<div class="col-lg-3">
@@ -52,8 +52,10 @@
 
 				<!-- Links -->
 				<p style="color: #c9c9cb;">
-					vedhacon pvt. ltd.<br> +91 XXX.XXX.XXXX<br> <a
-						href="mailto:info@nymity.com" style="color: #c9c9cb;">armtooladmin@vedhacon.com</a>
+					Vedhacon PIK Private Limited <br> <br> For Sales &
+					Training Inquiry<br> <a style="color: #c9c9cb;">sales@vedhacon.com</a><br>
+					<br>For ARM Tool related Queries<br> <a
+						style="color: #c9c9cb;">armtooladmin@vedhacon.com</a>
 				</p>
 				<!-- End links -->
 
@@ -79,7 +81,7 @@
 	<!-- /.container -->
 </footer>
 <footer class="py-5 bg-dark"
-	style="padding: 13px 17px !important; text-align: right; color: #b2b2b2; background: #2b2a2a !important; font-size: 12px;">
+	style="padding: 13px 17px !important; text-align: right; color: #b2b2b2; background: #2b2a2a !important; font-size: 10px;">
 	© 2016 Vedhacon. All rights reserved | Designed by <a
 		href="https://www.linkedin.com/profile/view?id=AAIAAA4uNZsBTzXFTH17Ciw3oFpX6KHl5Tgs3kc&amp;trk=nav_responsive_tab_profile"
 		target="_blank">Anurag Ghosh</a>

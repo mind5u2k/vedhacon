@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/views/gdpr.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/home.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/homePage.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/privacy.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/tciModel.jsp=UTF-8

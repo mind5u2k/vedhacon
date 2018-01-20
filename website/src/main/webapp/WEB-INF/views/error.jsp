@@ -54,9 +54,8 @@
 }
 </style>
 </head>
-
 <body
-	style="background-image: url('${images}/b4.jpg');backgroung-repeat:repear;">
+	style="background-image: url('/website/resources/images/b4.jpg'); padding-top: 74px !important; background-repeat: repeat;">
 
 	<%@include file="./shared/navbar.jsp"%>
 

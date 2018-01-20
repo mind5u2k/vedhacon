@@ -39,11 +39,99 @@ public class PageController {
 		return mv;
 	}
 
-	@RequestMapping(value = "/about")
-	public ModelAndView about() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "About Us");
+	@RequestMapping(value = "aboutUs")
+	public ModelAndView about(
+			@RequestParam(name = "pg", required = false) String pg) {
+		ModelAndView mv = new ModelAndView("homePage");
+
+		if (pg != null) {
+			if (pg.equals("team")) {
+				mv.addObject("title", "Team");
+			} else if (pg.equals("partners")) {
+				mv.addObject("title", "Partners");
+			}
+		} else {
+			mv.addObject("title", "About Us");
+		}
 		mv.addObject("userClickAbout", true);
+		return mv;
+	}
+
+	@RequestMapping(value = "privacy")
+	public ModelAndView privacy(
+			@RequestParam(name = "pg", required = false) String pg) {
+		ModelAndView mv = new ModelAndView("homePage");
+
+		if (pg != null) {
+			if (pg.equals("privacyLaws")) {
+				mv.addObject("title", "Privacy Laws");
+			} else if (pg.equals("gdpr")) {
+				mv.addObject("title", "GDPR");
+			} else if (pg.equals("dpfi")) {
+				mv.addObject("title", "Data Protection Framework");
+			}
+		} else {
+			mv.addObject("title", "Privacy");
+		}
+
+		mv.addObject("userClickPrivacy", true);
+		return mv;
+	}
+
+	@RequestMapping(value = "privacyLaws")
+	public ModelAndView privacyLaw() {
+		ModelAndView mv = new ModelAndView("privacyLaw");
+		return mv;
+	}
+
+	@RequestMapping(value = "gdpr")
+	public ModelAndView gdpr() {
+		ModelAndView mv = new ModelAndView("gdpr");
+		return mv;
+	}
+
+	@RequestMapping(value = "dataProtectionIndia")
+	public ModelAndView dataProtectionIndia() {
+		ModelAndView mv = new ModelAndView("dataProtectionIndia");
+		return mv;
+	}
+
+	@RequestMapping(value = "tciModel")
+	public ModelAndView tciModel(
+			@RequestParam(name = "pg", required = false) String pg) {
+		ModelAndView mv = new ModelAndView("homePage");
+
+		if (pg != null) {
+			if (pg.equals("train")) {
+				mv.addObject("title", "Train");
+			} else if (pg.equals("consult")) {
+				mv.addObject("title", "Consult");
+			} else if (pg.equals("implement")) {
+				mv.addObject("title", "Implement");
+			}
+		} else {
+			mv.addObject("title", "TCI Model");
+		}
+
+		mv.addObject("userClickTCIModel", true);
+		return mv;
+	}
+
+	@RequestMapping(value = "train")
+	public ModelAndView train() {
+		ModelAndView mv = new ModelAndView("train");
+		return mv;
+	}
+
+	@RequestMapping(value = "consult")
+	public ModelAndView consult() {
+		ModelAndView mv = new ModelAndView("consult");
+		return mv;
+	}
+
+	@RequestMapping(value = "implement")
+	public ModelAndView implement() {
+		ModelAndView mv = new ModelAndView("implement");
 		return mv;
 	}
 
