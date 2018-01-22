@@ -11,8 +11,37 @@
 	background: #faf9f9;
 }
 </style>
-<header style="border-bottom: 2px solid #151616;">
-	<div id="carouselExampleIndicators" class="carousel slide"
+<div style="border-bottom: 2px solid #151616;">
+	<div id="carouselExampleControls" class="carousel slide"
+		data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="${images}/i1.jpg" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="${images}/i2.jpg" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="${images}/i3.jpg" alt="Third slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="${images}/i4.jpg" alt="Third slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="${images}/i5.jpg" alt="Third slide">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls"
+			role="button" data-slide="prev"> <span
+			class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+			class="sr-only">Previous</span>
+		</a> <a class="carousel-control-next" href="#carouselExampleControls"
+			role="button" data-slide="next"> <span
+			class="carousel-control-next-icon" aria-hidden="true"></span> <span
+			class="sr-only">Next</span>
+		</a>
+	</div>
+	<%-- <div id="carouselExampleIndicators" class="carousel slide"
 		data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0"
@@ -28,10 +57,10 @@
 				style="background-image: url('${images}/i1.jpg')"></div>
 			<!-- Slide Two - Set the background image for this slide in the line below -->
 			<div class="carousel-item"
-				style="background-image: url('${images}/img2.jpg')"></div>
+				style="background-image: url('${images}/i2.jpg')"></div>
 			<!-- Slide Three - Set the background image for this slide in the line below -->
 			<div class="carousel-item"
-				style="background-image: url('${images}/img3.jpg')"></div>
+				style="background-image: url('${images}/i3.jpg')"></div>
 			<div class="carousel-item"
 				style="background-image: url('${images}/i4.jpg')"></div>
 			<div class="carousel-item"
@@ -46,8 +75,8 @@
 			class="carousel-control-next-icon" aria-hidden="true"></span> <span
 			class="sr-only">Next</span>
 		</a>
-	</div>
-</header>
+	</div> --%>
+</div>
 
 <div class="container" style="padding-top: 25px;">
 	<p class="sint">
